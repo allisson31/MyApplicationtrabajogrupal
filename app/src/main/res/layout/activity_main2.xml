@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcula tu inversion"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:text="Incrementa tu resntabilidad segun el monto y plazo que establezcas."
+        android:textColor="#020202"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuànto quieres invertir?"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="369dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="$0.00"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="360dp"
+        android:layout_height="33dp"
+        android:text="Monto a invertir debe ser mayor o igual $200"
+        android:textColor="#101010"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="360dp"
+        android:layout_height="33dp"
+        android:text="Selecciona el tipo de plazo"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="294dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="138dp"
+        android:layout_height="57dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="343dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="132dp"
+            android:layout_height="56dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FDFDFD"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="138dp"
+        android:layout_height="63dp"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="339dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="133dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#FBFBFB"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="138dp"
+        android:layout_height="19dp"
+        android:text="Dìas"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="136dp"
+        android:layout_height="30dp"
+        android:text="Mensual"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="345dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Duraciòn de tu inversiòn"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="344dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="216dp"
+        android:text="Permanencia minima es de 30 dìas hasta 360 dìas"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="332dp"
+            android:layout_height="46dp"
+            android:background="#CFE5EF"
+            android:backgroundTint="#E5F1F6"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.155">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="332dp"
+            android:layout_height="46dp"
+            android:background="#CFE5EF"
+            android:backgroundTint="#E5F1F6"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.155">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Ganas millas por invertir apartir de 120 dìas plazo."
+                android:textAlignment="center"
+                android:textColor="#046693" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="326dp"
+            android:layout_height="39dp"
+            android:backgroundTint="#EAE7E7"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="69dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:text="Continuar"
+                android:textAlignment="center"
+                android:textColor="#AEA2A2"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
